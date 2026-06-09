@@ -1,0 +1,14 @@
+# OS / sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Logs / temporários
+*.log
+node_modules/

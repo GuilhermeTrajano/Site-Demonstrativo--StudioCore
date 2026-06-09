@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags / SEO -->
+  <title>StudioCore — Arquitetura & Design de Interiores de Alto Padrão</title>
+  <meta name="title" content="StudioCore — Arquitetura & Design de Interiores de Alto Padrão" />
+  <meta name="description" content="StudioCore é um estúdio de arquitetura e design de interiores premium. Projetos residenciais, comerciais e corporativos exclusivos, com gestão completa da execução." />
+  <meta name="keywords" content="arquitetura, design de interiores, projetos residenciais, projetos comerciais, projetos corporativos, arquitetura de alto padrão, StudioCore" />
+  <meta name="author" content="GT Core" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://studiocore.example.com/" />
+  <meta name="theme-color" content="#111111" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://studiocore.example.com/" />
+  <meta property="og:title" content="StudioCore — Arquitetura & Design de Interiores de Alto Padrão" />
+  <meta property="og:description" content="Estúdio de arquitetura e design de interiores premium. Projetos exclusivos com gestão completa da execução." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="StudioCore" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="StudioCore — Arquitetura & Design de Interiores de Alto Padrão" />
+  <meta name="twitter:description" content="Estúdio de arquitetura e design de interiores premium. Projetos exclusivos com gestão completa da execução." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23111111'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='52' font-weight='bold' fill='%23B7791F' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "StudioCore",
+    "description": "Estúdio de arquitetura e design de interiores premium.",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://studiocore.example.com/",
+    "telephone": "+55 21 4000-0000",
+    "priceRange": "$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Atlântica, 2000 — Copacabana",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "postalCode": "22021-001",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Brasil",
+    "founder": "GT Core"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ====================== HEADER / NAV ====================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <div class="brand">
+        <a href="#hero" class="brand__mark" aria-label="StudioCore — página inicial">StudioCore</a>
+        <span class="brand__sig">by <a href="https://gtcore.vercel.app/" target="_blank" rel="noopener" class="gt-link">GT Core</a></span>
+      </div>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn btn--small nav__cta">Iniciar projeto</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================== HERO ====================== -->
+    <section class="hero" id="hero">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal">Arquitetura · Design de Interiores</p>
+        <h1 class="hero__title reveal">
+          Espaços que traduzem<br /><em>quem você é.</em>
+        </h1>
+        <p class="hero__lead reveal">
+          Projetos exclusivos de arquitetura e interiores de alto padrão — do conceito
+          à execução, com curadoria absoluta de cada detalhe.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#projetos" class="btn btn--light">Ver projetos</a>
+          <a href="#contato" class="btn btn--ghost-light">Iniciar projeto →</a>
+        </div>
+      </div>
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ====================== MARQUEE ====================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Residencial</span><span>·</span>
+        <span>Comercial</span><span>·</span>
+        <span>Corporativo</span><span>·</span>
+        <span>Interiores</span><span>·</span>
+        <span>Gestão de obra</span><span>·</span>
+        <span>Residencial</span><span>·</span>
+        <span>Comercial</span><span>·</span>
+        <span>Corporativo</span><span>·</span>
+        <span>Interiores</span><span>·</span>
+        <span>Gestão de obra</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- ====================== SOBRE ====================== -->
+    <section class="section sobre" id="sobre">
+      <div class="container grid-2">
+        <div class="sobre__text">
+          <p class="eyebrow reveal">Sobre o estúdio</p>
+          <h2 class="section__title reveal">
+            Excelência silenciosa em cada projeto que assinamos.
+          </h2>
+          <p class="lead reveal">
+            A StudioCore nasce do encontro entre rigor técnico e sensibilidade estética.
+            Projetamos ambientes atemporais para clientes que valorizam exclusividade,
+            funcionalidade e um padrão impecável de acabamento.
+          </p>
+          <p class="reveal">
+            Cada projeto é tratado de forma única — ouvimos, interpretamos e materializamos.
+            Acompanhamos você do primeiro esboço à entrega das chaves, garantindo que o
+            resultado final seja exatamente o que foi imaginado, sem concessões.
+          </p>
+
+          <div class="stats reveal">
+            <div class="stat">
+              <span class="stat__num" data-count="120">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">Projetos entregues</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="15">0</span><span class="stat__plus">+</span>
+              <span class="stat__label">Anos de mercado</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="98">0</span><span class="stat__plus">%</span>
+              <span class="stat__label">Clientes satisfeitos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre__media reveal">
+          <img
+            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80"
+            alt="Sala de estar minimalista com iluminação natural e mobiliário de alto padrão"
+            loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PROJETOS ====================== -->
+    <section class="section projetos" id="projetos">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow reveal">Portfólio</p>
+            <h2 class="section__title reveal">Projetos selecionados</h2>
+          </div>
+          <div class="filters reveal" role="tablist" aria-label="Filtrar projetos">
+            <button class="filter is-active" data-filter="all">Todos</button>
+            <button class="filter" data-filter="residencial">Residencial</button>
+            <button class="filter" data-filter="comercial">Comercial</button>
+            <button class="filter" data-filter="corporativo">Corporativo</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project reveal" data-category="residencial">
+            <div class="project__img">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Residência contemporânea com pé-direito duplo" loading="lazy" />
+            </div>
+            <div class="project__meta">
+              <span class="project__tag">Residencial</span>
+              <h3>Casa Horizonte</h3>
+              <p>São Paulo · 420m²</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="corporativo">
+            <div class="project__img">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Escritório corporativo moderno e iluminado" loading="lazy" />
+            </div>
+            <div class="project__meta">
+              <span class="project__tag">Corporativo</span>
+              <h3>Sede Meridian</h3>
+              <p>São Paulo · 1.200m²</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="comercial">
+            <div class="project__img">
+              <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" alt="Loja de varejo com design sofisticado" loading="lazy" />
+            </div>
+            <div class="project__meta">
+              <span class="project__tag">Comercial</span>
+              <h3>Boutique Âmbar</h3>
+              <p>Rio de Janeiro · 180m²</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="residencial">
+            <div class="project__img">
+              <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Quarto de casal com paleta neutra e madeira" loading="lazy" />
+            </div>
+            <div class="project__meta">
+              <span class="project__tag">Residencial</span>
+              <h3>Apartamento Sereno</h3>
+              <p>Curitiba · 210m²</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="corporativo">
+            <div class="project__img">
+              <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&q=80" alt="Lounge corporativo com mobiliário de design" loading="lazy" />
+            </div>
+            <div class="project__meta">
+              <span class="project__tag">Corporativo</span>
+              <h3>Hub Lumiar</h3>
+              <p>Belo Horizonte · 860m²</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="comercial">
+            <div class="project__img">
+              <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=800&q=80" alt="Café com interiores aconchegantes e iluminação cálida" loading="lazy" />
+            </div>
+            <div class="project__meta">
+              <span class="project__tag">Comercial</span>
+              <h3>Café Norte</h3>
+              <p>Florianópolis · 140m²</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== SERVIÇOS ====================== -->
+    <section class="section servicos" id="servicos">
+      <div class="container">
+        <p class="eyebrow reveal">O que fazemos</p>
+        <h2 class="section__title reveal">Serviços de ponta a ponta</h2>
+
+        <div class="services-grid">
+          <article class="service reveal">
+            <span class="service__num">01</span>
+            <h3>Projeto Arquitetônico</h3>
+            <p>Concepção completa de espaços residenciais, comerciais e corporativos, do partido ao detalhamento executivo.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__num">02</span>
+            <h3>Design de Interiores</h3>
+            <p>Curadoria de materiais, mobiliário, iluminação e arte para ambientes com identidade e atemporalidade.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__num">03</span>
+            <h3>Gestão de Execução</h3>
+            <p>Coordenação integral da obra — fornecedores, cronograma e qualidade — para uma entrega impecável.</p>
+          </article>
+          <article class="service reveal">
+            <span class="service__num">04</span>
+            <h3>Consultoria & Reforma</h3>
+            <p>Repaginação de ambientes existentes com soluções inteligentes que valorizam o seu patrimônio.</p>
+          </article>
+        </div>
+
+        <!-- DIFERENCIAIS -->
+        <div class="diferenciais">
+          <div class="diferencial reveal">
+            <h4>Atendimento personalizado</h4>
+            <p>Um time dedicado a você, com escuta atenta e comunicação transparente em cada etapa.</p>
+          </div>
+          <div class="diferencial reveal">
+            <h4>Projetos exclusivos</h4>
+            <p>Nada de soluções genéricas. Cada ambiente é desenhado sob medida para o seu modo de viver.</p>
+          </div>
+          <div class="diferencial reveal">
+            <h4>Gestão completa da execução</h4>
+            <p>Você acompanha sem se preocupar — cuidamos de tudo, do canteiro de obras ao acabamento final.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== DEPOIMENTOS ====================== -->
+    <section class="section depoimentos" id="depoimentos">
+      <div class="container">
+        <p class="eyebrow reveal">Depoimentos</p>
+        <h2 class="section__title reveal">A confiança de quem já viveu a experiência</h2>
+
+        <div class="testimonials-grid">
+          <figure class="testimonial reveal">
+            <blockquote>"A StudioCore entendeu nossa família melhor do que nós mesmos. O resultado superou tudo o que imaginávamos — e o processo foi tranquilo do início ao fim."</blockquote>
+            <figcaption>
+              <strong>Helena Vasconcelos</strong>
+              <span>Casa Horizonte · Residencial</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <blockquote>"Profissionalismo raro. Entregaram nossa nova sede no prazo, dentro do orçamento e com um nível de acabamento que impressiona todos os visitantes."</blockquote>
+            <figcaption>
+              <strong>Rafael Andrade</strong>
+              <span>Sede Meridian · Corporativo</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial reveal">
+            <blockquote>"Cada detalhe da nossa boutique conta uma história. As vendas cresceram e os clientes elogiam o espaço todos os dias. Valeu cada decisão."</blockquote>
+            <figcaption>
+              <strong>Marina Costa</strong>
+              <span>Boutique Âmbar · Comercial</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CONTATO ====================== -->
+    <section class="section contato" id="contato">
+      <div class="container grid-2 contato__grid">
+        <div class="contato__intro">
+          <p class="eyebrow reveal">Vamos conversar</p>
+          <h2 class="section__title reveal">Conte sobre o seu projeto</h2>
+          <p class="lead reveal">
+            Preencha o formulário e nossa equipe entrará em contato em até 24 horas
+            úteis para uma conversa inicial — sem compromisso.
+          </p>
+
+          <ul class="contato__info reveal">
+            <li><span>Email</span> contato@studiocore.com.br</li>
+            <li><span>Telefone</span> +55 21 4000-0000</li>
+            <li><span>Estúdio</span> Av. Atlântica, 2000 — Copacabana, Rio de Janeiro, RJ</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="leadForm" novalidate>
+          <div class="form__row">
+            <label>
+              Nome completo
+              <input type="text" name="nome" required placeholder="Seu nome" />
+            </label>
+          </div>
+          <div class="form__row form__row--2">
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="voce@email.com" />
+            </label>
+            <label>
+              Telefone
+              <input type="tel" name="telefone" required placeholder="(21) 90000-0000" />
+            </label>
+          </div>
+          <div class="form__row">
+            <label>
+              Tipo de projeto
+              <select name="tipo" required>
+                <option value="" disabled selected>Selecione</option>
+                <option>Residencial</option>
+                <option>Comercial</option>
+                <option>Corporativo</option>
+                <option>Reforma / Consultoria</option>
+              </select>
+            </label>
+          </div>
+          <div class="form__row">
+            <label>
+              Mensagem
+              <textarea name="mensagem" rows="4" placeholder="Conte um pouco sobre o que você imagina..."></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--dark form__submit">Enviar solicitação</button>
+          <p class="form__note">Demonstração — nenhum dado é enviado a um servidor.</p>
+
+          <div class="form__success" id="formSuccess" hidden>
+            <strong>Recebemos a sua solicitação. ✦</strong>
+            <span>Em breve nossa equipe entrará em contato. Obrigado pelo interesse na StudioCore.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ====================== CTA FINAL ====================== -->
+    <section class="cta-final">
+      <div class="container cta-final__inner reveal">
+        <h2>Pronto para transformar o seu espaço?</h2>
+        <p>Vamos projetar algo extraordinário, juntos.</p>
+        <a href="#contato" class="btn btn--light">Iniciar projeto →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== PORTFÓLIO / GT CORE ====================== -->
+  <section class="portfolio" aria-label="Sobre este projeto demonstrativo">
+    <div class="container">
+      <p class="portfolio__eyebrow">
+        <a href="https://gtcore.vercel.app/" target="_blank" rel="noopener" class="gt-link">GT Core</a> · Projeto Demonstrativo
+      </p>
+      <div class="portfolio__grid">
+        <div class="portfolio__item">
+          <h4>Problema</h4>
+          <p>Estúdios de arquitetura perdem clientes com presença digital amadora — sites lentos, pouco responsivos e com baixa taxa de conversão.</p>
+        </div>
+        <div class="portfolio__item">
+          <h4>Solução</h4>
+          <p>Site institucional premium com landing page de alta conversão, SEO técnico, design responsivo e captação de leads integrada.</p>
+        </div>
+        <div class="portfolio__item">
+          <h4>Tecnologias</h4>
+          <p>HTML5, CSS3, JavaScript, SEO técnico (JSON-LD), Design Responsivo.</p>
+        </div>
+        <div class="portfolio__item">
+          <h4>Destaques</h4>
+          <p>Design premium responsivo, animações on-scroll, filtro de projetos, formulário de captação e dados estruturados para SEO.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">StudioCore</span>
+        <span class="brand__sig">by <a href="https://gtcore.vercel.app/" target="_blank" rel="noopener" class="gt-link">GT Core</a></span>
+        <p>Arquitetura e design de interiores de alto padrão.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 StudioCore. Demonstração — empresa fictícia.</span>
+      <span>©
+        <a href="https://gtcore.vercel.app/" target="_blank" rel="noopener" class="gt-link gt-link--bege">GT Core</a>
+        — Projeto de Portfólio
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
