@@ -16,14 +16,26 @@
   const closeMenu = () => {
     links.classList.remove('is-open');
     toggle.classList.remove('is-open');
+    nav.classList.remove('menu-open');
+    document.body.classList.remove('nav-open');
     toggle.setAttribute('aria-expanded', 'false');
   };
   toggle.addEventListener('click', () => {
     const open = links.classList.toggle('is-open');
     toggle.classList.toggle('is-open', open);
+    nav.classList.toggle('menu-open', open);
+    document.body.classList.toggle('nav-open', open);
     toggle.setAttribute('aria-expanded', String(open));
   });
   links.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+  document.addEventListener('click', (e) => {
+    if (!links.classList.contains('is-open')) return;
+    if (links.contains(e.target) || toggle.contains(e.target)) return;
+    closeMenu();
+  });
 
   /* ---------- Reveal on scroll ---------- */
   const reveals = document.querySelectorAll('.reveal');
